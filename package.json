@@ -1,0 +1,11 @@
+{
+  "name": "louis-ko-website",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write index.html styles.css main.js assets/favicon.svg README.md package.json .prettierrc.json",
+    "format:check": "prettier --check index.html styles.css main.js assets/favicon.svg README.md package.json .prettierrc.json"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

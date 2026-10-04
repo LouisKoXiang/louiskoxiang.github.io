@@ -1,1 +1,603 @@
-<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Louis Ko Blog</title><meta name="description" content="我是一名前端工作者，喜歡學習新技術，致力於開發具有漂亮界面和良好用戶體驗的網站或應用程序。"><meta name="keywords" content="louiskoxiang,KoJingXiang,JingXiangKo,Ko Jing Xiang"><meta property="og:site_name" content="Louis Ko Blog"><meta property="og:url" content="https://louiskoxiang.github.io"><meta property="og:image" content="https://i.imgur.com/b4jdsEY.png"><meta property="og:type" content="website"><meta property="og:description" content="我是一名前端工作者，喜歡學習新技術，致力於開發具有漂亮界面和良好用戶體驗的網站或應用程序。"><link href="/css/app.afd5a42c.css" rel="preload" as="style"><link href="/css/chunk-vendors.95b6eb1c.css" rel="preload" as="style"><link href="/js/app.8cebeefd.js" rel="preload" as="script"><link href="/js/chunk-vendors.5c28ec1c.js" rel="preload" as="script"><link href="/css/chunk-vendors.95b6eb1c.css" rel="stylesheet"><link href="/css/app.afd5a42c.css" rel="stylesheet"></head><body><div id="app"></div><script src="/js/chunk-vendors.5c28ec1c.js"></script><script src="/js/app.8cebeefd.js"></script></body></html>
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f2ec" />
+    <title>Louis Ko kochingxiang — Frontend Engineer & Tech Lead</title>
+    <meta
+      name="description"
+      content="Louis Ko kochingxiang，資深前端工程師、緯創軟體部門課長。工作涵蓋 Vue、TypeScript、銀行系統與前端共用工具，個人專案為 Taiwan Airline Data。"
+    />
+    <meta property="og:title" content="Louis Ko kochingxiang — Frontend Engineer & Tech Lead" />
+    <meta
+      property="og:description"
+      content="Vue 與 TypeScript 前端開發、銀行系統、工程案例，以及個人專案 Taiwan Airline Data。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://louiskoxiang.github.io/" />
+    <link rel="canonical" href="https://louiskoxiang.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要內容</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Louis Ko，回到首頁">
+        <span class="brand-mark" aria-hidden="true">
+          lk
+          <span>✳</span>
+        </span>
+        <span>
+          LOUIS KO
+          <span class="brand-sub">FRONTEND ENGINEER</span>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="主要導覽">
+        <a href="#work">
+          精選作品
+          <span>01</span>
+        </a>
+        <a href="#craft">
+          工程思考
+          <span>02</span>
+        </a>
+        <a href="#about">
+          關於我
+          <span>03</span>
+        </a>
+      </nav>
+      <a class="header-contact" href="#contact">
+        聯絡我
+        <span aria-hidden="true">↗</span>
+      </a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="開啟導覽選單"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="手機版導覽" hidden>
+        <a href="#work">01 / 精選作品</a>
+        <a href="#craft">02 / 工程思考</a>
+        <a href="#about">03 / 關於我</a>
+        <a href="#contact">04 / 聯絡我 ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-eyebrow">
+          <span class="mono">
+            <span class="status-dot"></span>
+            FRONTEND ENGINEER / TECH LEAD
+          </span>
+          <span class="mono hero-edition">TAIWAN · SINCE 2017</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              Louis Ko.
+              <br />
+              Frontend
+              <br />
+              <em>Engineer.</em>
+            </h1>
+            <div class="hero-intro">
+              <span class="intro-line" aria-hidden="true"></span>
+              <div>
+                <p class="hero-name">我是 kochingxiang，也可以叫我 Louis。</p>
+                <p>
+                  主要做 Vue 前端開發，近年負責銀行系統。
+                  <br />
+                  工作之外，也做自己的資料產品。
+                </p>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#work">
+                看看我的作品
+                <span aria-hidden="true">↗</span>
+              </a>
+              <nav class="hero-socials" aria-label="社群連結">
+                <a
+                  href="https://github.com/LouisKoXiang"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub（新分頁）"
+                >
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jing-xiang-ko-a837a0177/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn（新分頁）"
+                >
+                  LinkedIn <span aria-hidden="true">↗</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="旋轉線框造型">
+            <div class="art-top mono">
+              <span>FORM STUDY — 01</span>
+              <span aria-hidden="true">＋</span>
+            </div>
+            <div class="orbital-disc" aria-hidden="true"></div>
+            <canvas id="sculpture" aria-hidden="true"></canvas>
+            <span class="art-cross art-cross-one" aria-hidden="true">+</span>
+            <span class="art-cross art-cross-two" aria-hidden="true">+</span>
+            <div class="art-label mono">
+              FRONTEND / DATA / AI
+              <br />
+              <span>LOUIS KO · PERSONAL WEBSITE</span>
+            </div>
+            <button class="motion-toggle mono" aria-label="暫停線框動畫" aria-pressed="false">
+              <span class="motion-icon" aria-hidden="true">Ⅱ</span>
+              <span class="motion-label">PAUSE</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-footer mono">
+          <span>VUE · TYPESCRIPT · FRONTEND ARCHITECTURE</span>
+          <a href="#intro">
+            SCROLL DOWN
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="intro-section section-shell" id="intro" aria-labelledby="intro-title">
+        <div class="section-kicker mono">
+          <span>WHAT I DO</span>
+          <span>↓</span>
+        </div>
+        <div class="intro-grid">
+          <h2 id="intro-title">
+            主要寫前端，
+            <br />
+            也處理前端以外的問題<span class="lime-dot">。</span>
+          </h2>
+          <p>
+            近幾年在銀行專案做信貸、財富管理與個人網銀。除了功能開發，我也負責第一階段 Code
+            Review、共用工具與元件，並協助部門同事釐清技術和專案問題。
+          </p>
+        </div>
+        <div class="metrics">
+          <div>
+            <strong>8<span>+</span></strong>
+            <p>年軟體工程經驗</p>
+            <span class="mono">BUILDING SINCE 2017</span>
+          </div>
+          <div>
+            <strong>25<span>人</span></strong>
+            <p>部門管理規模（約）</p>
+            <span class="mono">DEPARTMENT MANAGEMENT</span>
+          </div>
+          <div>
+            <strong>3<span>項</span></strong>
+            <p>2023–2025 AI 競賽與技術獎項</p>
+            <span class="mono">2023 / 2024 / 2025</span>
+          </div>
+          <div class="metric-note">
+            <span class="asterisk" aria-hidden="true">✳</span>
+            <p>
+              日常工作
+              <br />
+              仍以寫程式為主，
+              <br />
+              兼顧部門管理。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker mono">01 / SELECTED WORK</p>
+            <h2 id="work-title">Selected work<span class="lime-dot">.</span></h2>
+          </div>
+          <p>
+            公開的資料產品，
+            <br />
+            以及兩次 AI 競賽的實作。
+          </p>
+        </div>
+        <article class="featured-project">
+          <a
+            class="project-visual"
+            href="https://taiwanairlinedata.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="開啟 Taiwan Airline Data 台灣航空資料平台（新分頁）"
+          >
+            <div class="project-visual-heading mono">
+              <span>INDEPENDENT PROJECT / LIVE</span>
+              <span>↗</span>
+            </div>
+            <div class="flight-decoration" aria-hidden="true">
+              <span>TPE</span>
+              <span class="flight-line"></span>
+              <span>THE WORLD</span>
+            </div>
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>taiwanairlinedata.com</span>
+              </div>
+              <img
+                src="assets/taiwan-airline-data.png"
+                alt="台灣航空資料平台實際畫面，包含四家航空公司的載客率與市場資料"
+                width="1280"
+                height="720"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-open">
+              VISIT WEBSITE
+              <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+          <div class="project-info">
+            <div>
+              <p class="mono project-number">01 — DATA / VISUALIZATION</p>
+              <h3>Taiwan Airline Data</h3>
+              <p class="project-subtitle">台灣航空載客率與市場資料</p>
+            </div>
+            <div>
+              <p class="project-description">
+                我獨立開發的航空資料網站，整理台灣航空公司的載客率與市場資料。可以比較各家航空的表現、查詢航線，也能看每月的變化。
+              </p>
+              <div class="tags">
+                <span>個人產品</span>
+                <span>資料視覺化</span>
+                <span>航空市場</span>
+              </div>
+              <a
+                class="text-link"
+                href="https://taiwanairlinedata.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往專案
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <div class="project-pair">
+          <article class="small-project">
+            <div class="ai-visual risk-visual" aria-hidden="true">
+              <span class="mono visual-caption">LOAN RISK ANALYSIS</span>
+              <div class="risk-chart">
+                <span style="--bar: 44%"></span>
+                <span style="--bar: 66%"></span>
+                <span style="--bar: 35%"></span>
+                <span style="--bar: 87%"></span>
+                <span style="--bar: 59%"></span>
+                <span style="--bar: 74%"></span>
+                <span style="--bar: 95%"></span>
+              </div>
+              <div class="ai-flow mono">
+                <span>DATA</span>
+                <b>→</b>
+                <span>MODEL</span>
+                <b>→</b>
+                <span>INSIGHT</span>
+              </div>
+              <span class="award-pill">2025 · 競賽第二名</span>
+            </div>
+            <p class="mono project-number">02 — MACHINE LEARNING / GENERATIVE AI</p>
+            <h3>AI 輔助貸款風險分析</h3>
+            <p class="project-description">
+              以 XGBoost 預測貸款風險，用 SHAP 解釋模型結果，再串接 LLM 輔助分析。後端使用 Python 與
+              FastAPI，透過 Docker 部署到 Cloud Run。
+            </p>
+            <div class="tags">
+              <span>XGBoost / SHAP</span>
+              <span>FastAPI</span>
+              <span>LLM</span>
+              <span>Cloud Run</span>
+            </div>
+            <p class="project-award">第三屆人工智慧數位轉型競賽 · 第二名</p>
+          </article>
+          <article class="small-project">
+            <div class="ai-visual talent-visual" aria-hidden="true">
+              <span class="mono visual-caption">SKILL SIMILARITY / TALENT MATCHING</span>
+              <svg class="talent-graph" viewBox="0 0 480 220" fill="none">
+                <g stroke="#9caaa1" stroke-width="1">
+                  <path
+                    d="M78 72L240 112L396 57M109 181L240 112L366 181M240 112L213 29M240 112L435 127M78 72L213 29L396 57L435 127L366 181L109 181Z"
+                  />
+                  <circle cx="240" cy="112" r="65" stroke-dasharray="3 6" />
+                </g>
+                <g fill="#eff4ed" stroke="#1e342a">
+                  <circle cx="78" cy="72" r="20" />
+                  <circle cx="396" cy="57" r="16" />
+                  <circle cx="109" cy="181" r="13" />
+                  <circle cx="366" cy="181" r="20" />
+                  <circle cx="213" cy="29" r="10" />
+                  <circle cx="435" cy="127" r="10" />
+                </g>
+                <circle cx="240" cy="112" r="35" fill="#cdff6b" stroke="#1e342a" />
+                <path d="M228 116v-10h8v-8h8v8h8v10h-8v8h-8v-8Z" fill="#1e342a" />
+              </svg>
+              <span class="award-pill">2024 · HACKATHON 第三名</span>
+            </div>
+            <p class="mono project-number">03 — NLP / TALENT MATCHING</p>
+            <h3>人才與技能媒合</h3>
+            <p class="project-description">
+              用自然語言處理整理人才與技能描述，將文字轉成結構化資料，計算技能相似度，再以視覺化呈現媒合結果。
+            </p>
+            <div class="tags">
+              <span>NLP</span>
+              <span>TF-IDF</span>
+              <span>Similarity Analysis</span>
+            </div>
+            <p class="project-award">第二屆 WITS AI Hackathon · 第三名</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="craft-section" id="craft" aria-labelledby="craft-title">
+        <div class="section-shell craft-shell">
+          <div class="craft-intro">
+            <p class="section-kicker mono">02 / ENGINEERING NOTES</p>
+            <h2 id="craft-title">
+              銀行專案裡，
+              <br />
+              我做過的
+              <br />
+              <em>前端工具。</em>
+            </h2>
+            <p>
+              這三項工作都來自開發時遇到的問題：頁面狀態該不該保留、API
+              還沒好怎麼測，以及多人開發時怎麼共用元件。
+            </p>
+            <div class="craft-footnote mono">
+              <span class="status-dot"></span>
+              VUE 3 / BANKING APPLICATIONS
+            </div>
+          </div>
+          <div class="case-list">
+            <details open>
+              <summary>
+                <span class="case-number mono">01</span>
+                <h3>
+                  <small class="mono">STATE & NAVIGATION</small>
+                  <span class="case-title">依導航行為管理頁面 Cache</span>
+                </h3>
+                <span class="details-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="case-body">
+                <p>
+                  金融流程裡，返回上一頁應保留操作，重新進入卻不能誤用舊資料。我以 Vue 3 KeepAlive
+                  與 Vue Router 設計導航感知的 Cache
+                  機制，依來源與前進／返回行為，決定狀態還原或重新初始化。
+                </p>
+                <div class="case-diagram mono">
+                  <span>導航來源</span>
+                  <span>→</span>
+                  <span>狀態判斷</span>
+                  <span>→</span>
+                  <span>還原 / 初始化</span>
+                </div>
+                <span class="case-tech mono">VUE 3 · KEEPALIVE · VUE ROUTER</span>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="case-number mono">02</span>
+                <h3>
+                  <small class="mono">DEVELOPER EXPERIENCE</small>
+                  <span class="case-title">不依賴 API 的 Mock 測試流程</span>
+                </h3>
+                <span class="details-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="case-body">
+                <p>
+                  建立統一的 Mock / Function Test 底層機制，只靠靜態 Mock Resources
+                  就能執行完整業務流程。讓開發人員在 API
+                  尚未完成或環境不可用時，也能獨立開發與驗證，成為專案共用的標準模式。
+                </p>
+                <div class="case-diagram mono">
+                  <span>MOCK RESOURCES</span>
+                  <span>→</span>
+                  <span>完整流程驗證</span>
+                </div>
+                <span class="case-tech mono">MOCK INFRASTRUCTURE · FUNCTION TEST</span>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="case-number mono">03</span>
+                <h3>
+                  <small class="mono">COMPONENTS & CODE REVIEW</small>
+                  <span class="case-title">共用元件庫與 Code Review</span>
+                </h3>
+                <span class="details-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="case-body">
+                <p>
+                  建立底層共用元件庫，集中管理可重複使用的 UI，並以類似 Storybook
+                  的展示方式協助團隊理解與使用。同時擔任約 6 人前端團隊的第一線 Code
+                  Reviewer，持續檢視程式品質與無障礙互動。
+                </p>
+                <div class="case-diagram mono">
+                  <span>共用元件</span>
+                  <span>＋</span>
+                  <span>CODE REVIEW</span>
+                  <span>＋</span>
+                  <span>ACCESSIBILITY</span>
+                </div>
+                <span class="case-tech mono">COMPONENT LIBRARY · ARIA · FOCUS MANAGEMENT</span>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker mono">03 / A LITTLE ABOUT ME</p>
+            <h2 id="about-title">
+              A bit
+              <br />
+              about me<span class="lime-dot">.</span>
+            </h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              2017 年從電信公司的實習開始，
+              <br />
+              之後做過智慧家居後台、支付系統，現在主要做銀行前端。
+            </p>
+            <p>
+              2023
+              年開始兼任部門課長，負責績效考核、技術面試與同事的專案狀況。工作還是以寫程式為主，也曾擔任公司內部前端講師。
+            </p>
+          </div>
+        </div>
+        <div class="personal-note">
+          <blockquote>
+            <span class="mono">ON FRONTEND</span>
+            <p>“Frontend is like a box of chocolates.”</p>
+          </blockquote>
+          <span class="personal-asterisk" aria-hidden="true">✳</span>
+        </div>
+        <div class="journey">
+          <div class="journey-label mono">
+            THE JOURNEY
+            <br />
+            <span>2017 → NOW</span>
+          </div>
+          <div class="timeline">
+            <article>
+              <span class="mono timeline-year">2021.09 — PRESENT</span>
+              <div>
+                <div class="timeline-company">
+                  <h3>緯創軟體</h3>
+                  <span class="current-tag mono">CURRENT</span>
+                </div>
+                <p class="timeline-role">資深前端工程師 / 部門課長</p>
+                <p>
+                  投入信貸、財富管理與個人網銀。2023 年升任部門課長，兼顧工程實作、約 25
+                  人的部門管理與人才培育；同年獲 WITS 技術大神獎。
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="mono timeline-year">2019.07 — 2021.04</span>
+              <div>
+                <h3>雷特遊戲</h3>
+                <p class="timeline-role">前端工程師</p>
+                <p>
+                  打造支付管理與金流服務，串接第三方支付；參與 ATFX Client Portal / App、WebView
+                  整合與 Design Token 導入。
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="mono timeline-year">2018.09 — 2019.07</span>
+              <div>
+                <h3>益創智慧</h3>
+                <p class="timeline-role">全端工程師</p>
+                <p>以 Vue、Node.js 與 AWS Serverless 參與智慧家居後台重構與微服務開發。</p>
+              </div>
+            </article>
+            <article>
+              <span class="mono timeline-year">2017.06 — 2018.09</span>
+              <div>
+                <h3>雲太電信</h3>
+                <p class="timeline-role">實習生 → 軟體工程師</p>
+                <p>獨立建置話務分析與管理系統，從資料視覺化、後台功能到 RESTful API。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="toolkit">
+          <p class="mono">MY WORKING TOOLKIT</p>
+          <div>
+            <span>Vue 3</span>
+            <span>TypeScript</span>
+            <span>Micro Frontends</span>
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>AI / ML</span>
+            <span>Docker</span>
+            <span>Cloud</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell">
+          <div class="contact-top">
+            <p class="section-kicker mono">GET IN TOUCH</p>
+            <span class="mono">EMAIL / GITHUB / LINKEDIN</span>
+          </div>
+          <a class="contact-title-link" href="mailto:louiskoxiang@gmail.com">
+            <h2 id="contact-title">
+              Say
+              <br />
+              <em>hello.</em>
+            </h2>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-bottom">
+            <p>有前端、專案或工作機會想聊，歡迎寄信給我。</p>
+            <div class="email-actions">
+              <a href="mailto:louiskoxiang@gmail.com">louiskoxiang@gmail.com</a>
+              <button id="copy-email" aria-label="複製電子郵件地址">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="8" y="8" width="12" height="12" rx="1" />
+                  <path d="M15 8V4H4v11h4" />
+                </svg>
+              </button>
+              <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer section-shell">
+      <a class="footer-name" href="#top">
+        LOUIS KO
+        <span aria-hidden="true">✳</span>
+      </a>
+      <span class="mono">
+        ©
+        <span id="copyright-year">2026</span>
+        LOUIS KO
+      </span>
+      <div>
+        <a href="https://github.com/LouisKoXiang" target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jing-xiang-ko-a837a0177/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+        <a href="#top" aria-label="回到頂端">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
